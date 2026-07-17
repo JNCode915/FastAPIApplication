@@ -1,0 +1,18 @@
+<html>
+    <header></header>
+    <body>
+        <form action="/students/addorupdatestudent" method="post">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" value="{{ student.name if student else '' }}" required>
+            <br>
+            <label for="age">Student Age:</label>
+            <input type="number" id="age" name="age" value="{{ student.age if student else '' }}" required>
+            <br>
+            <label for="grade">Student Grade:</label>
+            <input type="number" id="grade" name="grade" value="{{ student.grade if student else '' }}" required>
+            <br>
+            <input type="hidden" name="student_id" value="{{ student.id if student else '' }}">
+            <button type="submit">Add or Update Student</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+#add pip installs for fastapi, uvicorn, jinja2
+fastapi==0.95.2
+uvicorn==0.22.0
+jinja2==3.1.6
+python-multipart==0.0.6
+pydantic
+sqlalchemy==2.0.51
+python-dotenv==0.10.0
+mysql-connector-python
